@@ -35,7 +35,7 @@ module "consul" {
   public_subnets  = module.network.public_subnets
   instance_type   = "t2.micro"
   vol_size        = "10"
-  key_name        = "keymtc"
+  key_name        = "awskeydemo"
   public_key_path = "c:/Users/sebbycorp/.ssh/awskeydemo.pub"
 
 }
@@ -47,7 +47,7 @@ module "vault" {
   public_subnets  = module.network.public_subnets
   instance_type   = "t2.micro"
   vol_size        = "10"
-  key_name        = "keymtc"
+  key_name        = "awskeydemo"
   public_key_path = "c:/Users/sebbycorp/.ssh/awskeydemo.pub"
 
 }
